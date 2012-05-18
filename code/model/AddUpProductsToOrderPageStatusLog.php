@@ -22,11 +22,11 @@ class AddUpProductsToOrderPageStatusLog extends OrderStatusLog {
 		return true;
 	}
 
-	public static $singular_name = "Corporate Order Details";
-		function i18n_singular_name() { return _t("AddUpProductsToOrderPageStatusLog.CorporateOrderDetails", "Corporate Order Details");}
+	public static $singular_name = "Club Order Detail";
+		function i18n_singular_name() { return _t("AddUpProductsToOrderPageStatusLog.ClubOrderDetail", "Club Order Detail");}
 
-	public static $plural_name = "Corporate Orders Details";
-		function i18n_plural_name() { return _t("AddUpProductsToOrderPageStatusLog.CorporateOrdersDetails", "Corporate Orders Details");}
+	public static $plural_name = "Club Orders Details";
+		function i18n_plural_name() { return _t("AddUpProductsToOrderPageStatusLog.ClubOrdersDetails", "Club Orders Details");}
 
 	/**
 	*

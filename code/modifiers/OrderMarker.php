@@ -3,7 +3,7 @@
 /**
  * @author Nicolaas [at] sunnysideup.co.nz
  * @package: ecommerce
- * @sub-package: ecommerce_corporate_account
+ * @sub-package: ecommerce_club_order
  */
 
 class OrderMarker extends OrderModifier {
@@ -131,7 +131,7 @@ class OrderMarker_Form extends OrderModifierForm {
 
 	function __construct($optionalController = null, $name,FieldSet $fields, FieldSet $actions,$validator = null) {
 		parent::__construct($optionalController, $name,$fields,$actions,$validator);
-		Requirements::javascript("ecommerce_corporate_account/javascript/OrderMarkerModifier.js");
+		Requirements::javascript("ecommerce_club_order/javascript/OrderMarkerModifier.js");
 	}
 
 	public function submit($data, $form) {

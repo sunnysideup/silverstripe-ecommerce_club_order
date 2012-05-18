@@ -10,7 +10,7 @@
  */
 class AddUpProductsToOrderPage extends Page {
 
-	public static $icon = "ecommerce_corporate_account/images/treeicons/AddUpProductsToOrderPage";
+	public static $icon = "ecommerce_club_order/images/treeicons/AddUpProductsToOrderPage";
 
 	public static $db = array(
 		"OrderLogEntryTitle" => "Varchar",
@@ -45,8 +45,10 @@ class AddUpProductsToOrderPage_Controller extends Page_Controller {
 		parent::init();
 		Requirements::themedCSS("AddUpProductsToOrderPage");
 		Requirements::javascript(THIRDPARTY_DIR."/jquery/jquery.js");
+		//Requirements::block(THIRDPARTY_DIR."/jquery/jquery.js");
+		//Requirements::javascript(Director::protocol()."ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js");
 		Requirements::javascript(THIRDPARTY_DIR."/jquery-form/jquery.form.js");
-		Requirements::javascript("ecommerce_corporate_account/javascript/AddUpProductsToOrderPage.js");
+		Requirements::javascript("ecommerce_club_order/javascript/AddUpProductsToOrderPage.js");
 		$checkoutPage = DataObject::get_one("CheckoutPage");
 		Requirements::customScript("AddUpProductsToOrderPage.setCheckoutLink('".$checkoutPage->Link()."');", "setCheckoutLink");
 	}
