@@ -5,6 +5,7 @@
  * @package: ecommerce
  * @sub-package: ecommerce_delivery
  * @description: Shipping calculation scheme based on SimpleShippingModifier.
+ * @TODO: use proper Buyable Field
  * It lets you set fixed shipping costs, or a fixed
  * cost for each region you're delivering to.
  */
@@ -54,6 +55,26 @@ class AddUpProductsToOrderPage_Controller extends Page_Controller {
 	}
 
 	protected $rowNumbers = 1;
+
+	/**
+	 * controller method
+	 * @return String (HTML)
+	 */
+	function addrow($request){
+		$getVarArray = $request->getVars();
+		$this->rowNumbers = intval($getVarArray["rowNumbers"]);
+		return $this->renderWith("AddProductsToOrderAjax");
+	}
+
+	/**
+	 * controller method
+	 * resets all data
+	 */
+	function reset($request) {
+		Session::clear("AddProductsToOrderRows");
+		Session::save();
+		Director::redirectBack();
+	}
 
 	/**
 	 *@return DOS
@@ -261,21 +282,11 @@ class AddUpProductsToOrderPage_Controller extends Page_Controller {
 		return $this->customise($customiseArray)->renderWith("AddProductsToOrderResultsAjax");
 	}
 
-	function addrow($request){
-		$getVarArray = $request->getVars();
-		$this->rowNumbers = intval($getVarArray["rowNumbers"]);
-		return $this->renderWith("AddProductsToOrderAjax");
-	}
-
 	function RowNumbers(){
 		return $this->rowNumbers;
 	}
 
-	function reset() {
-		Session::clear("AddProductsToOrderRows");
-		Session::save();
-		Director::redirectBack();
-	}
+
 
 }
 
