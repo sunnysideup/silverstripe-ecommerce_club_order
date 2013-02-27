@@ -1,5 +1,5 @@
 {
-	"name": "silverstripe/ecommerce_club_order",
+	"name": "sunnysideup/ecommerce_club_order",
 	"type": "silverstripe-module",
 	"description": "this silverstripe ecommerce modules is for situations when you have groups ordering stuff and you want to keep track of their individual orders within one order",
 	"homepage": "http://www.silverstripe-ecommerce.com",
