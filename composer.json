@@ -1,21 +1,25 @@
 {
-	"name": "sunnysideup/ecommerce_club_order",
-	"type": "silverstripe-module",
-	"description": "this silverstripe ecommerce modules is for situations when you have groups ordering stuff and you want to keep track of their individual orders within one order",
-	"homepage": "http://www.silverstripe-ecommerce.com",
-	"keywords": ["ecommerce", "e-commerce", "shop", "club order", "silverstripe"],
-	"license": "Sunny Side Up (BSD-3-Clause and CUSTOM)",
-	"authors":[
-		{
-			"name": "Nicolaas Francken",
-			"homepage": "https://github.com/sunnysideup",
-			"email" : "modules@sunnysideup.co.nz",
-			"role" : "lead developer"
-		}
-	],
-	"require":{
-		"php": ">=5.3.2",
-		"silverstripe/framework": "~2.4",
-		"sunnysideup/ecommerce": "~2.4"
-	}
+    "name": "sunnysideup/ecommerce_club_order",
+    "type": "silverstripe-module",
+    "description": "this silverstripe ecommerce modules is for situations when you have groups ordering stuff and you want to keep track of their individual orders within one order",
+    "keywords": [
+        "ecommerce",
+        "e-commerce",
+        "shop",
+        "club order",
+        "silverstripe"
+    ],
+    "license": "Sunny Side Up (BSD-3-Clause and CUSTOM)",
+    "authors": [
+        {
+            "name": "Nicolaas Francken",
+            "email": "modules@sunnysideup.co.nz",
+            "role": "lead developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "silverstripe/framework": "~2.4",
+        "sunnysideup/ecommerce": "~2.4"
+    }
 }
