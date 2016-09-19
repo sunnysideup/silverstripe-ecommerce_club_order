@@ -3,11 +3,13 @@
     "type": "silverstripe-module",
     "description": "this silverstripe ecommerce modules is for situations when you have groups ordering stuff and you want to keep track of their individual orders within one order",
     "keywords": [
+        "Silverstripe-CMS",
+        "CMS",
+        "Silverstripe",
         "ecommerce",
         "e-commerce",
         "shop",
-        "club order",
-        "silverstripe"
+        "club order"
     ],
     "license": "Sunny Side Up (BSD-3-Clause and CUSTOM)",
     "authors": [
@@ -20,6 +22,7 @@
     "require": {
         "php": ">=5.3.2",
         "silverstripe/framework": "~2.4",
-        "sunnysideup/ecommerce": "~2.4"
+        "sunnysideup/ecommerce": "~2.4",
+        "silverstripe/cms": "~2.4"
     }
 }
